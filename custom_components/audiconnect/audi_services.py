@@ -768,7 +768,7 @@ class AudiService:
         if "idkClientIDAndroidLive" in marketcfg_json:
             self._client_id = marketcfg_json["idkClientIDAndroidLive"]
 
-        self._authorizationServerBaseURLLive = "https://emea.bff.cariad.digital/login/v1/audi"
+        self._authorizationServerBaseURLLive = "https://na.bff.cariad.digital/login/v1/audi"
         if "authorizationServerBaseURLLive" in marketcfg_json:
             self._authorizationServerBaseURLLive = marketcfg_json[
                 "authorizationServerBaseURLLive"
@@ -784,11 +784,11 @@ class AudiService:
         authorization_endpoint = "https://identity.vwgroup.io/oidc/v1/authorize"
         if "authorization_endpoint" in openidcfg_json:
             authorization_endpoint = openidcfg_json["authorization_endpoint"]
-        self._tokenEndpoint = "https://emea.bff.cariad.digital/login/v1/idk/token"
+        self._tokenEndpoint = "https://na.bff.cariad.digital/login/v1/idk/token"
         if "token_endpoint" in openidcfg_json:
             self._tokenEndpoint = openidcfg_json["token_endpoint"]
         revocation_endpoint = (
-            "https://emea.bff.cariad.digital/login/v1/idk/revoke"
+            "https://na.bff.cariad.digital/login/v1/idk/revoke"
         )
         if revocation_endpoint in openidcfg_json:
             revocation_endpoint = openidcfg_json["revocation_endpoint"]
