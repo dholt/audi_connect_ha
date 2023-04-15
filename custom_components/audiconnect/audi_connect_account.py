@@ -46,7 +46,6 @@ class AudiConnectAccount:
         self._username = username
         self._password = password
         self._loggedin = False
-        //self._logintime = time.time()
         self._logintime = 0
 
         self._connect_retries = 3
